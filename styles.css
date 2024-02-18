@@ -71,9 +71,15 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 10px;
+    height: 30px;
+    padding: 5px 20px;
     border-radius: 8px;
-    border: 1px solid black;
+    border: none;
+    font-size: 1em;
+    font-weight: bolder;
+    color: white;
+    background-color: #00a884;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .grupo {
@@ -144,6 +150,8 @@ a {
     text-decoration: none;
     color: black;
 }
+
+select { caret-color: black; }
 
 @media screen and (max-width:768px) {
     #box {
