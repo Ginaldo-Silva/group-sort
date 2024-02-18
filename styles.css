@@ -116,6 +116,7 @@ p {
 li {
     list-style: none;
     text-align: center;
+    color: black;
 }
 
 @media screen and (max-width:768px) {
