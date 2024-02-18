@@ -72,7 +72,7 @@ select {
     align-items: center;
     justify-content: center;
     height: 30px;
-    padding: 5px 20px;
+    padding: 5px 10px;
     border-radius: 8px;
     border: none;
     font-size: 1em;
@@ -173,11 +173,7 @@ select { caret-color: black; }
     }
 }
 
-@media screen and (min-width:768px) and (max-width:992px) {
-
-}
-
-@media screen and (min-width:992px) {
+@media screen and (min-width:768px) {
     #box {
         padding: 20px;
         border-radius: 12px;
