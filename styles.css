@@ -99,9 +99,27 @@ select {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
+#footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
 h1 {
     text-align: center;
     padding-bottom: 20px;
+}
+
+h2 {
+    padding-right: 25px;
+    font-size: 0.8em;
+}
+
+h3 {
+    font-size: 0.8em;
 }
 
 button { cursor: pointer; }
@@ -116,6 +134,14 @@ p {
 li {
     list-style: none;
     text-align: center;
+    color: black;
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
     color: black;
 }
 
@@ -135,6 +161,8 @@ li {
         width: 100%;
         gap: 30px;
         padding: 20px 0px;
+        max-height: 250px;
+        overflow: auto;
     }
 }
 
