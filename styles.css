@@ -68,18 +68,7 @@ select {
 #quantidadeGrupos, #sortearGrupos { height: 25px; }
 
 #sortearGrupos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
     padding: 5px 10px;
-    border-radius: 8px;
-    border: none;
-    font-size: 1em;
-    font-weight: bolder;
-    color: white;
-    background-color: #00a884;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .grupo {
@@ -91,18 +80,7 @@ select {
 .grupo ul { gap: 10px; }
 
 #compartilharGrupos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
     padding: 5px 20px;
-    border-radius: 8px;
-    border: none;
-    font-size: 1em;
-    font-weight: bolder;
-    color: white;
-    background-color: #00a884;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 #footer {
@@ -128,7 +106,20 @@ h3 {
     font-size: 0.8em;
 }
 
-button { cursor: pointer; }
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    font-weight: bolder;
+    color: white;
+    background-color: #00a884;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    cursor: pointer;
+}
 
 p {
     text-align: center;
