@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+    --font-1: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-1);
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25px;
+    min-width: 125px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+#lista-alunos {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+}
+
+#quantidadeGrupos {
+    border-radius: 8px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#quantidadeGrupos, #sortearGrupos { height: 25px; }
+
+#sortearGrupos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.grupo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grupo ul { gap: 10px; }
+
+#compartilharGrupos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1em;
+    font-weight: bolder;
+    color: white;
+    background-color: #00a884;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+button { cursor: pointer; }
+
+p {
+    text-align: center;
+    color: red;
+    padding: 20px 10px 5px 10px;
+    font-size: 0.8em;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    #box {
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+
+    #grupos-container {
+        display: grid;
+        flex-direction: row;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 30px;
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+}
+
+@media screen and (min-width:992px) {
+    #box {
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    #grupos-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 30px;
+        padding: 20px 0px;
+    }
+}

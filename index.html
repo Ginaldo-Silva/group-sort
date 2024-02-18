@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio de grupo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="box">
+        <h1>Sorteio de Grupos</h1>
+        <div class="container-1">
+            <select name="cursoSelect" id="cursoSelect"></select>
+            <select name="turmaSelect" id="turmaSelect"></select>
+        </div>
+        <ul id="lista-alunos"></ul>
+        <div class="container-1">
+            <input type="number" id="quantidadeGrupos" min="1" value="1">
+            <button id="sortearGrupos">Sortear Grupos</button>
+        </div>
+        <div id="grupos-container"></div>
+
+        <button id="compartilharGrupos">Compartilhar Grupos no WhatsApp</button>
+        <p>Site criado somente para estudantes da AEB/FBJ, site atualizado e gerido atualmente por Ginaldo.</p>
+    </div>
+    <script>
+        function gerarMensagemCompartilhamento() {
+            const grupos = document.querySelectorAll('.grupo');
+            let mensagem = 'Grupos para o trabalho:\n\n';
+
+            grupos.forEach((grupo, index) => {
+            const participantes = grupo.querySelectorAll('li');
+            mensagem += `Grupo ${index + 1}:\n`;
+
+            participantes.forEach(participante => {
+            mensagem += `- ${participante.textContent}\n`;
+            });
+
+            mensagem += '\n';
+            });
+
+            // Codificar a mensagem para formato de URI
+            return encodeURIComponent(mensagem);
+        }
+
+        // Função para abrir o WhatsApp com a mensagem de compartilhamento
+        function compartilharNoWhatsApp() {
+            const mensagem = gerarMensagemCompartilhamento();
+            const url = `https://wa.me/?text=${mensagem}`;
+
+            // Abrir a URL no WhatsApp
+            window.open(url, '_blank');
+        }
+
+        // Adicionar ouvinte de evento para o botão de compartilhamento
+        const compartilharGruposBtn = document.getElementById('compartilharGrupos');
+        compartilharGruposBtn.addEventListener('click', compartilharNoWhatsApp);
+    </script>
+</body>
+</html>
