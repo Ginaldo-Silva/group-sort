@@ -55,7 +55,6 @@ select {
 #lista-alunos {
     display: grid;
     justify-items: start;
-    grid-template-columns: repeat(5, 1fr);
     width: 100%;
     gap: 10px;
     padding: 10px;
@@ -145,6 +144,39 @@ button {
     cursor: pointer;
 }
 
+summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+summary::-webkit-details-maker {
+    display: none;
+}
+
+details {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#content {
+    padding: 10px;
+    line-height: 1.25;
+}
+
+details[open] {
+    border-top: 5px solid var(--color-primary);
+}
+
+details[open] .icon {
+    transform: rotate(180deg);
+}
+
+.icon {
+    transition: transform 0.1s linear;
+}
+
 p {
     text-align: center;
     color: red;
@@ -176,6 +208,8 @@ select { caret-color: black; }
         padding: 10px 5px;
     }
 
+    #lista-alunos { grid-template-columns: repeat(4, 1fr); }
+
     #grupos-container {
         display: grid;
         flex-direction: row;
@@ -187,6 +221,10 @@ select { caret-color: black; }
         max-height: 250px;
         overflow: auto;
     }
+
+    details[open] { width: 95%; }
+
+    #content { width: 100%; }
 }
 
 @media screen and (min-width:768px) {
@@ -196,6 +234,8 @@ select { caret-color: black; }
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
+    #lista-alunos { grid-template-columns: repeat(5, 1fr); }
+
     #grupos-container {
         display: flex;
         flex-direction: row;
@@ -204,4 +244,12 @@ select { caret-color: black; }
         gap: 30px;
         padding: 20px 0px;
     }
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }

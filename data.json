@@ -1,87 +1,11 @@
 [
-    {
-        "nome": "Ginaldo",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Rayanne",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Leticia",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Andresa",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Ricardo",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Julianderson",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Rita",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Ana",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Amanda",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Iara",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Mateus",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Kauanny",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Taynar",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Stephanie",
-        "turma": "2 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Gabriela",
-        "turma": "5 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Adriano",
-        "turma": "1 Periodo",
-        "curso": "Letras"
-    },
-    {
-        "nome": "Luiz",
-        "turma": "5 Periodo",
-        "curso": "Administração"
-    }
+    {"nome": "Ginaldo", "turma": "3 Periodo", "curso": "Letras"},
+    {"nome": "Andresa", "turma": "3 Periodo", "curso": "Letras"},
+    {"nome": "Rayanne", "turma": "3 Periodo", "curso": "Letras"},
+    {"nome": "Leticia", "turma": "3 Periodo", "curso": "Letras"},
+    {"nome": "Ricardo", "turma": "3 Periodo", "curso": "Letras"},
+    {"nome": "Julianderson", "turma": "3 Periodo", "curso": "Letras"},
+    {"nome": "Rita", "turma": "3 Periodo", "curso": "Letras"},
+    {"nome": "Ana", "turma": "3 Periodo", "curso": "Letras"},
+    {"nome": "Amanda", "turma": "3 Periodo", "curso": "Letras"}
 ]
