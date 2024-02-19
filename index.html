@@ -11,25 +11,35 @@
     <div id="box">
         <h1>Sorteio de Grupos</h1>
         <div class="container-1">
-            <select name="cursoSelect" id="cursoSelect"></select>
-            <select name="turmaSelect" id="turmaSelect"></select>
+            <div class="input-config">
+                <label for="cursoSelect">Curso</label>
+                <select name="cursoSelect" id="cursoSelect"></select>
+            </div>
+            <div class="input-config">
+                <label for="turmaSelect">Periodo</label>
+                <select name="turmaSelect" id="turmaSelect"></select>
+            </div>
         </div>
         <ul id="lista-alunos"></ul>
         <div class="container-1">
-            <input type="number" id="quantidadeGrupos" min="2" value="2">
+            <div class="input-config">
+                <label for="quantidadeGrupos">Qauntidade de Grupos</label>
+                <input type="number" id="quantidadeGrupos" min="2" value="2"></div>
             <button id="sortearGrupos">Sortear Grupos</button>
         </div>
         <div id="grupos-container"></div>
 
-        <button id="compartilharGrupos">Compartilhar Grupos no WhatsApp</button>
-        <p>Site criado somente para estudantes da AEB/FBJ, site atualizado e gerido atualmente por Ginaldo.</p>
-        <div id="footer">
-            <h2>Redes socias do criador</h2>
-            <div>
-                <a class="social" href="https://www.instagram.com/ginaldosilva_18?igsh=MThuZGYxZ3pkY2g1dg%3D%3D&utm_source=qr">
-                    <object type="image/svg+xml" data="svg/square-instagram.svg" width="20" height="20" class="social-icon"></object>
-                    <h3>Instagram</h3>
-                </a>
+        <div id="botton-container">
+            <button id="compartilharGrupos">Compartilhar Grupos no WhatsApp</button>
+            <p>Site criado somente para estudantes da AEB/FBJ, site atualizado e gerido atualmente por Ginaldo.</p>
+            <div id="footer">
+                <h2 class="subtitle">Redes socias do criador</h2>
+                <div>
+                    <a class="social" href="https://www.instagram.com/ginaldosilva_18?igsh=MThuZGYxZ3pkY2g1dg%3D%3D&utm_source=qr">
+                        <object type="image/svg+xml" data="svg/square-instagram.svg" width="20" height="20" class="social-icon"></object>
+                        <h3>Instagram</h3>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
