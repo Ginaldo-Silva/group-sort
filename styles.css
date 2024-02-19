@@ -153,6 +153,7 @@ summary {
 }
 
 summary::-webkit-details-maker {
+    list-style: none;
     display: none;
 }
 
