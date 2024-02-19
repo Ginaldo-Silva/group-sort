@@ -152,6 +152,17 @@ summary {
     padding: 24px;
 }
 
+summary::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
 summary::-webkit-details-maker {
     list-style: none;
     display: none;
