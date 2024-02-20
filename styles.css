@@ -122,6 +122,7 @@ h1 {
 }
 
 h2 {
+    font-size: 1.5em;
     padding-bottom: 10px;
 }
 
@@ -190,6 +191,7 @@ li {
     list-style: none;
     text-align: center;
     color: black;
+    font-size: 0.8em;
 }
 
 a {
@@ -236,7 +238,7 @@ select { caret-color: black; }
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
-    #lista-alunos { grid-template-columns: repeat(5, 1fr); }
+    #lista-alunos { grid-template-columns: repeat(6, 1fr); }
 
     details, details[open] { width: 100%; }
 
