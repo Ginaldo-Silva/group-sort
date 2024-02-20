@@ -108,5 +108,37 @@ fetch('data.json')
 
     // Chamar a função inicialmente para exibir a lista completa
     atualizarTurmasPorCurso();
+
+    function gerarMensagemCompartilhamento() {
+        const grupos = document.querySelectorAll('.grupo');
+        let mensagem = 'Grupos para o trabalho:\n\n';
+    
+        grupos.forEach((grupo, index) => {
+        const participantes = grupo.querySelectorAll('li');
+        mensagem += `Grupo ${index + 1}:\n`;
+    
+        participantes.forEach(participante => {
+        mensagem += `- ${participante.textContent}\n`;
+        });
+    
+        mensagem += '\n';
+        });
+    
+        // Codificar a mensagem para formato de URI
+        return encodeURIComponent(mensagem);
+    }
+    
+    // Função para abrir o WhatsApp com a mensagem de compartilhamento
+    function compartilharNoWhatsApp() {
+        const mensagem = gerarMensagemCompartilhamento();
+        const url = `https://wa.me/?text=${mensagem}`;
+    
+        // Abrir a URL no WhatsApp
+        window.open(url, '_blank');
+    }
+    
+    // Adicionar ouvinte de evento para o botão de compartilhamento
+    const compartilharGruposBtn = document.getElementById('compartilharGrupos');
+    compartilharGruposBtn.addEventListener('click', compartilharNoWhatsApp);
 })
 .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
