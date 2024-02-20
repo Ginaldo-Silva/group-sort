@@ -39,7 +39,7 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 select {
@@ -68,11 +68,7 @@ select {
     width: 50px;
 }
 
-#quantidadeGrupos, #sortearGrupos { height: 25px; }
-
-#sortearGrupos {
-    padding: 5px 10px;
-}
+#quantidadeGrupos { height: 25px; }
 
 .grupo {
     display: flex;
@@ -81,10 +77,6 @@ select {
 }
 
 .grupo ul { gap: 10px; }
-
-#compartilharGrupos {
-    padding: 5px 20px;
-}
 
 #botton-container {
     display: flex;
@@ -134,8 +126,9 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
+    height: 35px;
     border-radius: 8px;
+    padding: 5px 10px;
     border: none;
     font-size: 1em;
     font-weight: bolder;
@@ -150,7 +143,7 @@ summary {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    padding: 24px;
+    padding: 12px 10px;
 }
 
 summary::-webkit-details-maker {
@@ -159,7 +152,7 @@ summary::-webkit-details-maker {
 }
 
 details {
-    margin: 20px 0px;
+    margin: 10px 0px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
